@@ -1,1 +1,0 @@
-- add start:hover effect and customize it, and then change it to .btn-press class to add it in the js script on the press event.
