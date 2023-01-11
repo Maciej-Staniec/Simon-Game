@@ -6,11 +6,14 @@
 }
 
 body {
+  background-image: url("./images/background-texture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
   font-family: "Original Surfer", cursive;
 }
 
@@ -22,6 +25,7 @@ body {
   border: 10px black solid;
   box-shadow: 8px 8px 15px 5px#888888;
   position: relative;
+  z-index: 1;
 }
 
 #topleft {
@@ -124,8 +128,10 @@ body {
   transform: translateY(-25%);
 }
 
-/* #start:hover {
-} */
+.pressed {
+  background-color: rgb(190, 190, 190);
+  box-shadow: 0 0 10px 1px black;
+}
 
 .toggle-text-line {
   position: absolute;
