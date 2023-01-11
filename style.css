@@ -40,7 +40,7 @@ body {
 
 #topright {
   position: absolute;
-  background-color: red;
+  background-color: darkred;
   width: 250px;
   height: 250px;
   border-radius: 0 240px 0 0;
@@ -50,7 +50,7 @@ body {
 
 #bottomleft {
   position: absolute;
-  background-color: yellow;
+  background-color: rgb(179, 179, 0);
   width: 250px;
   height: 250px;
   border-radius: 0 0 0px 240px;
@@ -61,7 +61,7 @@ body {
 
 #bottomright {
   position: absolute;
-  background-color: blue;
+  background-color: darkblue;
   width: 250px;
   height: 250px;
   border-radius: 0 0 240px 0;
