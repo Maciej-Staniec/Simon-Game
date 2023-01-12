@@ -50,7 +50,7 @@ body {
 
 #bottomleft {
   position: absolute;
-  background-color: rgb(179, 179, 0);
+  background-color: #b3b300;
   width: 250px;
   height: 250px;
   border-radius: 0 0 0px 240px;
