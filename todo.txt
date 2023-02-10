@@ -1,0 +1,2 @@
+TODO
+1. Fix the logic of game engine. Make sure that it only resets to step 1 when the 'strict' button is on.

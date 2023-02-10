@@ -180,13 +180,15 @@ function checkPlayerStep() {
     setTimeout(() => {
       startGame();
     }, 800);
-    // compTurn = true;
+    // TODO
     // flashColors();
+    // compTurn = true;
+    // playerPattern = [];
+    // isGoodAnswer = true;
+    // step = 0;
     // setTimeout(() => {
-    //   playerPattern = [];
     //   countScreen.textContent = currentLevel;
-    //   step = 0;
-    //   isGoodAnswer = true;
+    //   clearColors();
     //   flashSteps = setInterval(runPattern(), 800);
     // }, 1000);
   }
