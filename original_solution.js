@@ -1,7 +1,8 @@
 // Variables
 let order = [];
 let playerOrder = [];
-let flash, turn, good, compTurn, intervalId;
+let flash, turn, good, intervalId;
+let compTurn = true;
 let strict = false;
 let noise = true;
 let on = false;
@@ -50,8 +51,8 @@ startButton.addEventListener("click", () => {
 });
 
 topLeft.addEventListener("click", () => {
-  // We want the player to click the button ONLY if the game is on.
-  if (on) {
+  // We want the player to click the button ONLY if the game is on & it isn't computer's turn.
+  if (on && !compTurn) {
     // As this is topLeft button, when the player clicks it, we want to push a value of 1 to the player order.
     playerOrder.push(1);
     // Let's check if the player was right with a check() function.
@@ -69,8 +70,8 @@ topLeft.addEventListener("click", () => {
 });
 
 topRight.addEventListener("click", () => {
-  // We want the player to click the button ONLY if the game is on.
-  if (on) {
+  // We want the player to click the button ONLY if the game is on & it isn't computer's turn.
+  if (on && !compTurn) {
     // As this is topLeft button, when the player clicks it, we want to push a value of 1 to the player order.
     playerOrder.push(2);
     // Let's check if the player was right with a check() function.
@@ -88,8 +89,8 @@ topRight.addEventListener("click", () => {
 });
 
 bottomLeft.addEventListener("click", () => {
-  // We want the player to click the button ONLY if the game is on.
-  if (on) {
+  // We want the player to click the button ONLY if the game is on & it isn't computer's turn.
+  if (on && !compTurn) {
     // As this is topLeft button, when the player clicks it, we want to push a value of 1 to the player order.
     playerOrder.push(3);
     // Let's check if the player was right with a check() function.
@@ -107,8 +108,8 @@ bottomLeft.addEventListener("click", () => {
 });
 
 bottomRight.addEventListener("click", () => {
-  // We want the player to click the button ONLY if the game is on.
-  if (on) {
+  // We want the player to click the button ONLY if the game is on & it isn't computer's turn.
+  if (on && !compTurn) {
     // As this is topLeft button, when the player clicks it, we want to push a value of 1 to the player order.
     playerOrder.push(4);
     // Let's check if the player was right with a check() function.

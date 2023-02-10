@@ -177,20 +177,25 @@ function checkPlayerStep() {
 
   if (!isGoodAnswer) {
     countScreen.textContent = "NO!";
-    setTimeout(() => {
-      startGame();
-    }, 800);
+
+    if (isStrict) {
+      setTimeout(() => {
+        startGame();
+      }, 800);
+    } else {
+      flashColors();
+      compTurn = true;
+      playerPattern = [];
+      isGoodAnswer = true;
+      step = 0;
+      clearInterval(flashSteps);
+      setTimeout(() => {
+        countScreen.textContent = currentLevel;
+        clearColors();
+        flashSteps = setInterval(runPattern(), 800);
+      }, 1000);
+    }
     // TODO
-    // flashColors();
-    // compTurn = true;
-    // playerPattern = [];
-    // isGoodAnswer = true;
-    // step = 0;
-    // setTimeout(() => {
-    //   countScreen.textContent = currentLevel;
-    //   clearColors();
-    //   flashSteps = setInterval(runPattern(), 800);
-    // }, 1000);
   }
 
   if (playerPattern.length === currentLevel && isGoodAnswer && !win) {
